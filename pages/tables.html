@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Coastline | A Local Movement</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,14 +17,14 @@
     <!-- MetisMenu CSS -->
     <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
 
-    <!-- DataTables CSS -->
-    <link href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
-
-    <!-- DataTables Responsive CSS -->
-    <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+    <!-- Timeline CSS -->
+    <link href="../dist/css/timeline.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="../bower_components/morrisjs/morris.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -51,7 +51,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                <a class="navbar-brand" href="index.html"> <i class = "fa fa-briefcase"></i>  <b>Coastline Market</b></a>
             </div>
             <!-- /.navbar-header -->
 
@@ -69,31 +69,31 @@
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                <div>I'd like to order one bass fish, a salmon, and...</div>
                             </a>
                         </li>
                         <li class="divider"></li>
                         <li>
                             <a href="#">
                                 <div>
-                                    <strong>John Smith</strong>
+                                    <strong>Joe Vitale</strong>
                                     <span class="pull-right text-muted">
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                <div>I'd like to order one bass fish, a salmon, and...</div>
                             </a>
                         </li>
                         <li class="divider"></li>
                         <li>
                             <a href="#">
                                 <div>
-                                    <strong>John Smith</strong>
+                                    <strong>Kate Wilson</strong>
                                     <span class="pull-right text-muted">
                                         <em>Yesterday</em>
                                     </span>
                                 </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                <div>I'd like to order one bass fish, a salmon, and...</div>
                             </a>
                         </li>
                         <li class="divider"></li>
@@ -116,8 +116,8 @@
                             <a href="#">
                                 <div>
                                     <p>
-                                        <strong>Task 1</strong>
-                                        <span class="pull-right text-muted">40% Complete</span>
+                                        <strong>Salmon Inventory</strong>
+                                        <span class="pull-right text-muted">50/150 Remaining</span>
                                     </p>
                                     <div class="progress progress-striped active">
                                         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
@@ -132,8 +132,8 @@
                             <a href="#">
                                 <div>
                                     <p>
-                                        <strong>Task 2</strong>
-                                        <span class="pull-right text-muted">20% Complete</span>
+                                        <strong>Tuna Inventory</strong>
+                                        <span class="pull-right text-muted">20/150 Remaining</span>
                                     </p>
                                     <div class="progress progress-striped active">
                                         <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
@@ -148,8 +148,8 @@
                             <a href="#">
                                 <div>
                                     <p>
-                                        <strong>Task 3</strong>
-                                        <span class="pull-right text-muted">60% Complete</span>
+                                        <strong>Flounder Inventory</strong>
+                                        <span class="pull-right text-muted">100/150 Remaining</span>
                                     </p>
                                     <div class="progress progress-striped active">
                                         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
@@ -164,8 +164,8 @@
                             <a href="#">
                                 <div>
                                     <p>
-                                        <strong>Task 4</strong>
-                                        <span class="pull-right text-muted">80% Complete</span>
+                                        <strong>Bass Inventory</strong>
+                                        <span class="pull-right text-muted">135/150 Remaining</span>
                                     </p>
                                     <div class="progress progress-striped active">
                                         <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
@@ -178,7 +178,7 @@
                         <li class="divider"></li>
                         <li>
                             <a class="text-center" href="#">
-                                <strong>See All Tasks</strong>
+                                <strong>See All Inventory</strong>
                                 <i class="fa fa-angle-right"></i>
                             </a>
                         </li>
@@ -280,10 +280,23 @@
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.html"><i class="fa fa-home fa-fw"></i>Home</a>
                         </li>
+
+                        <li>
+                            <a href="store.html"><i class="fa fa-shopping-cart fa-fw"></i> My Store</a>
+                        </li>
+
+                           <li>
+                            <a href="tables.html"><i class="fa fa-money fa-fw"></i> My Orders</a>
+                        </li>
+                        
+
+
+                        <!--
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
+
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="flot.html">Flot Charts</a>
@@ -292,14 +305,14 @@
                                     <a href="morris.html">Morris.js Charts</a>
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
+                            
                         </li>
+                    --><!-- /.nav-second-level -->
+                     
                         <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                            <a href="inventory.html"><i class="fa fa-edit fa-fw"></i> My Inventory</a>
                         </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
+                        <!--
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -322,8 +335,11 @@
                                     <a href="grid.html">Grid</a>
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
+
+                            
                         </li>
+                    --><!-- /.nav-second-level -->
+                    <!--
                         <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
@@ -349,10 +365,11 @@
                                             <a href="#">Third Level Item</a>
                                         </li>
                                     </ul>
-                                    <!-- /.nav-third-level -->
+
+                                   
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
+                          
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
@@ -364,8 +381,9 @@
                                     <a href="login.html">Login Page</a>
                                 </li>
                             </ul>
-                            <!-- /.nav-second-level -->
+                            
                         </li>
+                    -->
                     </ul>
                 </div>
                 <!-- /.sidebar-collapse -->
@@ -376,7 +394,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Tables</h1>
+                    <h1 class="page-header">My Orders</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -385,7 +403,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            DataTables Advanced Tables
+                            Recent Order History
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -393,55 +411,90 @@
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>Rendering engine</th>
-                                            <th>Browser</th>
-                                            <th>Platform(s)</th>
-                                            <th>Engine version</th>
-                                            <th>CSS grade</th>
+                                            <th>Order Number</th>
+                                            <th>Fish Type</th>
+                                            <th>Date</th>
+                                            <th>Quantity</th>
+                                            <th>Payment Type</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr class="odd gradeX">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 4.0</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">4</td>
-                                            <td class="center">X</td>
+                                            <td>A4BCESR</td>
+                                            <td>Salmon</td>
+                                            <td>10/19/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">VISA</td>
                                         </tr>
                                         <tr class="even gradeC">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 5.0</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5</td>
-                                            <td class="center">C</td>
+                                            <td>A55C6SZ</td>
+                                            <td>Tuna</td>
+                                            <td>10/16/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">CASH</td>
                                         </tr>
                                         <tr class="odd gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 5.5</td>
-                                            <td>Win 95+</td>
-                                            <td class="center">5.5</td>
-                                            <td class="center">A</td>
+                                            <td>A6BC3FR</td>
+                                            <td>Crab</td>
+                                            <td>10/14/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">MASTERCARD</td>
                                         </tr>
                                         <tr class="even gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 6</td>
-                                            <td>Win 98+</td>
-                                            <td class="center">6</td>
-                                            <td class="center">A</td>
+                                            <td>B4BEEZR</td>
+                                            <td>Tuna</td>
+                                            <td>10/13/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">PAYPAL</td>
                                         </tr>
                                         <tr class="odd gradeA">
-                                            <td>Trident</td>
-                                            <td>Internet Explorer 7</td>
-                                            <td>Win XP SP2+</td>
-                                            <td class="center">7</td>
-                                            <td class="center">A</td>
+                                            <td>BEB9E5R</td>
+                                            <td>Tuna</td>
+                                            <td>10/13/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">VISA DEBIT</td>
                                         </tr>
                                         <tr class="even gradeA">
-                                            <td>Trident</td>
-                                            <td>AOL browser (AOL desktop)</td>
-                                            <td>Win XP</td>
-                                            <td class="center">6</td>
-                                            <td class="center">A</td>
+                                             <td>CE88E5R</td>
+                                            <td>Salmon</td>
+                                            <td>10/14/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">CASH</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                             <td>CE88E5R</td>
+                                            <td>Salmon</td>
+                                            <td>10/14/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">CASH</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                             <td>CE88E5R</td>
+                                            <td>Salmon</td>
+                                            <td>10/14/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">CASH</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                             <td>CE88E5R</td>
+                                            <td>Salmon</td>
+                                            <td>10/14/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">CASH</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                             <td>CE88E5R</td>
+                                            <td>Salmon</td>
+                                            <td>10/14/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">CASH</td>
+                                        </tr>
+                                        <tr class="even gradeA">
+                                             <td>CE88E5R</td>
+                                            <td>Salmon</td>
+                                            <td>10/14/2015</td>
+                                            <td class="center">20</td>
+                                            <td class="center">CASH</td>
                                         </tr>
                                         <tr class="gradeA">
                                             <td>Gecko</td>
@@ -805,11 +858,13 @@
                                 </table>
                             </div>
                             <!-- /.table-responsive -->
+                            <!--
                             <div class="well">
                                 <h4>DataTables Usage Information</h4>
                                 <p>DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images. For complete documentation on DataTables, visit their website at <a target="_blank" href="https://datatables.net/">https://datatables.net/</a>.</p>
                                 <a class="btn btn-default btn-lg btn-block" target="_blank" href="https://datatables.net/">View DataTables Documentation</a>
                             </div>
+                        -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -818,293 +873,7 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Kitchen Sink
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped table-bordered table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Basic Table
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Striped Rows
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Bordered Table
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive table-bordered">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-            </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Hover Rows
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-                <!-- /.col-lg-6 -->
-                <div class="col-lg-6">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            Context Classes
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Username</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="success">
-                                            <td>1</td>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr class="info">
-                                            <td>2</td>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr class="warning">
-                                            <td>3</td>
-                                            <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                        <tr class="danger">
-                                            <td>4</td>
-                                            <td>John</td>
-                                            <td>Smith</td>
-                                            <td>@jsmith</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /.table-responsive -->
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
+            
                 </div>
                 <!-- /.col-lg-6 -->
             </div>
