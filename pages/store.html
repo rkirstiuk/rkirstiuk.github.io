@@ -281,16 +281,11 @@
                         </li>
                         <li>
                             <a href="index.html"><i class="fa fa-home fa-fw"></i>Home</a>
-                        </li>
-
-                        <li>
-                            <a href="store.html"><i class="fa fa-shopping-cart fa-fw"></i> My Store</a>
-                        </li>
+                        </li>           
 
                            <li>
                             <a href="tables.html"><i class="fa fa-money fa-fw"></i> My Orders</a>
                         </li>
-                        
 
 
                         <!--
@@ -310,7 +305,10 @@
                     --><!-- /.nav-second-level -->
                      
                         <li>
-                            <a href="inventory.html"><i class="fa fa-edit fa-fw"></i> My Products</a>
+                            <a href="inventory.html"><i class="fa fa-shopping-cart fa-fw"></i> My Products</a>
+                        </li>
+                        <li>
+                            <a href="store.html"><i class="fa fa-plus fa-fw"></i> Add/Delete a Product</a>
                         </li>
                         <!--
                         <li>
@@ -396,15 +394,131 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">My Store Dood</h1>
+                        <h1 class="page-header">Add or Delete a Product</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
                 <!-- /.row -->
+                <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Add/Delete Product Form
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                           <div class="contact-form">
+        <div class="container">
+            
+
+            <div class="col-md-5">
+                <div class="form-group">
+                    <h4>Featured:
+                    <select name = "mydropdown">
+                    <option value = "Fish">Yes</option>
+                    <option value = "Cool">No</option>
+                </select>
+                </h4>
+                </div>
+            </div>
+<!--
+            <div class="col-md-5">
+                <div class="form-group">
+                    <h4>Type:
+                    <select name = "mydropdown">
+                    <option value = "Fish">Albacore</option>
+                    <option value = "Cool">Anchovy</option>
+                    <option value = "Beer">Angler</option>
+                    <option value = "Beer">Antarctic cod</option>
+                    <option value = "Beer">Arctic char</option>
+                    <option value = "Beer">Atlantic cod</option>
+                    <option value = "Beer">Bigeye</option>
+                    <option value = "Beer">Carp</option>
+                    <option value = "Beer">Salmon</option>
+                    <option value = "Beer">Herring</option>
+                    <option value = "Beer">Super Awesome Fish</option>
+                </select>
+                </h4>
+                </div>
+            </div>
+        -->
+            <div class="col-md-5">
+                <div class="form-group">
+                    <h4>Availability:
+                    <select name = "mydropdown">
+                    <option value = "Fish">Low</option>
+                    <option value = "Cool">Medium</option>
+                    <option value = "Beer">High</option>
+                </select>
+                </h4>
+                </div>
+            </div>
+
+            <br>
+            <br>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Fish Type (Must Be Exact For Deletion)">
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Desired Unit Price ($/lb)">
+                </div>
+            </div>
+    
+            <div class="col-md-5">
+                <div class="form-group">
+                    <!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="email">-->
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                     <!--<input type="email" class="form-control" id="exampleInputEmail1" placeholder="email">-->
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col-lg-10">             
+                <textarea class="form-control" rows="5" placeholder="Add A Quick Description..."></textarea>
+  <br>
+
+                <div class="col-md-5">
+                <div class="form-group">
+                    <h4>Picture Attachement</h4>
+                    <FORM METHOD="post" ACTION="#" ENCTYPE="multipart/form-data"> 
+                        <INPUT TYPE="file" NAME="attachedfile" MAXLENGTH=50 ALLOW="text/*"> 
+                        </FORM>
+                    </div>
+            </div> 
+            <br>      
+            <br>  
+                <div class="form-group">
+                    <br>
+                    <button type="submit" name="submit" class="btn btn-primary btn-lg" required="required">Add Product</button>
+                    <button type="#" name="delete" class="btn btn-secondary btn-lg" required="required">Delete Item</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+                            <!-- /.table-responsive -->
+                            <!--
+                            <div class="well">
+                                <h4>DataTables Usage Information</h4>
+                                <p>DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images. For complete documentation on DataTables, visit their website at <a target="_blank" href="https://datatables.net/">https://datatables.net/</a>.</p>
+                                <a class="btn btn-default btn-lg btn-block" target="_blank" href="https://datatables.net/">View DataTables Documentation</a>
+                            </div>
+                        -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
             </div>
             <!-- /.container-fluid -->
         </div>
         <!-- /#page-wrapper -->
+
 
     </div>
     <!-- /#wrapper -->
