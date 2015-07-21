@@ -4270,6 +4270,28 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-bottom: 15px;
   }
 }
+
+
+/*==========================
+CUSTOM LOGO
+
+
+.navbar-brand h1 {
+  margin-top:0px;
+  padding-top:0px;
+  float: left;  
+  font-size: 20px;  
+  color:#333;
+    text-transform: uppercase;
+}
+.navbar-brand h1 span {
+  color: #ea1616 ;
+    font-weight: 600;
+}
+=========================*/
+
+
+
 .navbar-form {
   padding: 10px 15px;
   margin-top: 8px;
