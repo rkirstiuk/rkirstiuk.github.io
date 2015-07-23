@@ -25,8 +25,9 @@ footer {
 }
 
 .dataTable_wrapper { 
-    overflow-y: auto;
-    overflow-y:auto;  }
+    max-width: 100%;
+    overflow-x: overflow;
+    }
 
 /* ==========================================================================
 BUTTON
