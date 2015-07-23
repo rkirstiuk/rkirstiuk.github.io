@@ -24,7 +24,9 @@ footer {
     color: #337ab7
 }
 
-.dataTable_wrapper { overflow-x: scroll; }
+.dataTable_wrapper { 
+    overflow-y: auto;
+    overflow-y:auto;  }
 
 /* ==========================================================================
 BUTTON
