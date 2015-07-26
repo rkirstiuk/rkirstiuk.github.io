@@ -465,6 +465,7 @@ fieldset[disabled] .btn-primary.active {
 	background: transparent;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+  -moz-transition: all .35s;
 }
 
 .btn:hover,
@@ -477,6 +478,8 @@ fieldset[disabled] .btn-primary.active {
     border-color: #fff;
     border-width: thick;
     font-weight: bold;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
 }
 
 .btn.btn-blue:hover {
@@ -499,6 +502,8 @@ fieldset[disabled] .btn-primary.active {
 	border-color: #fff;
     border-width: medium;
     font-weight: bold;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
 }
 
 .btn.btn-white-fill:hover {
